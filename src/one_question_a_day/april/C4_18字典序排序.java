@@ -51,9 +51,4 @@ public class C4_18字典序排序 {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        lexicalOrder2(1000);
-
-    }
 }
