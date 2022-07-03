@@ -3,9 +3,11 @@ package Utils;
 import one_question_a_day.june.C6_04电子邮件;
 import one_question_a_day.may.C5_28消除括号;
 import one_question_a_day.may.C5_29有效ip;
+import stack_and_queue.EmptyException;
+import stack_and_queue.MyQueue;
 
 public class TestMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EmptyException {
 //        System.out.println(7^8^9^7^3);
         C5_28消除括号 C = new C5_28消除括号();
         System.out.println(C.deleteKH("(()(()))()()(())"));
@@ -17,6 +19,11 @@ public class TestMain {
                 "testemail+david@lee.tcode.com"};
         int i = cs.numUniqueEmails(strings);
         System.out.println(i);
+//      ----------------------------------------
+       /* MyQueue queue = new MyQueue();
+        int peek = queue.pop();
+        System.out.println(peek);*/
+        System.out.println(Integer.MAX_VALUE);
 
     }
 }

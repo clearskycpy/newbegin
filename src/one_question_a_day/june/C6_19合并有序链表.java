@@ -37,6 +37,15 @@ public class C6_19合并有序链表 {
         }
         return  res.next;
     }
+    public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null){
+            return head;
+        }
+        ListNode newNode = head.next;
+        head.next = swapPairs(newNode.next);
+        newNode.next = head;
+        return newNode;
+    }
 }
 class ListNode {
     int val;
