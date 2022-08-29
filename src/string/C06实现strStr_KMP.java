@@ -40,7 +40,8 @@ public class C06实现strStr_KMP {
     private void getNext(int[] next, String needle) {
 //        初始化数组
         next[0] = 0;
-        int j = 0;  // 匹配好的前缀的长度（不包括j）
+        int j = 0;
+        // 匹配好的前缀的长度（不包括j）
         for (int i = 1; i < needle.length(); i++) {
             // i 实际上表示的是后缀数组的末尾，
             // 细细体会一下，这个位置就是后缀子串尝试匹配成功的最后一个字符
